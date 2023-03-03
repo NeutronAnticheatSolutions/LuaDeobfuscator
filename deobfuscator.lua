@@ -21,8 +21,11 @@ for i,v in pairs(deobftable) do
     end
   if requirenumber == 2 then
     deobfstring = deobfstring..");\n"
+    requirenumber = 0
+    requireenabled = false
     end
   if v == "require" then
+    requireenabled = true
     deobfstring = deobfstring.."require("
     end
   end
